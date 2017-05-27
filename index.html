@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>serviceprojects.org |Home</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Places Searchbox</title>
+		<link rel="shortcut icon" href="https://www.casanys.org/files/5514/4465/5706/volunteer.png" type="image/x-icon">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id="map"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB71-ul5I17vYvBx7fW1iRH0wypuB0XG5k&libraries=places&callback=initAutocomplete"
+				  async defer></script>
+		<div class="topNav">
+			<ul>
+				<li><a class="button-back button-expand" href="#home"><span>HOME</span></a></li>
+				<li class="location"><input id="pac-input" class="search-expand" type="text" name="location" placeholder="FIND A LOCATION"></li>
+				<li><a class="button-back-invert button-expand-invert" href="#addProject" onclick="openNav()"><span>LOG IN</a></span></li>
+			</ul>
+		</div>
+		<center>
+			<div class="overlay zoom">
+				<div class="padding">
+					<h1>Start with a Location</h1>
+						<input id="pac-input2" type="text" name="location" placeholder="Search">
+				</div>
+			</div>
+		</center>
+		<div id="mySidenav" class="closebtn sidenav zoom">
+			<div class="sidenavslide2">
+			<center>
+			<h1 class="close"><i class="fa fa-close"></i></h1>
+			<div class="login zoom">
+				<h1 class="light">Log In</h1>
+				<form>
+					<input placeholder="Username" name="username" type="text" class="forms" required></input>
+					<input name="password" type="password" class="forms" placeholder="Password" required></input>
+	<input id="submit" type="submit" class="button"></input>
+					<div class="question">
+						<h6>Don't have an account? Click <a id="logInClick" href="#account">HERE</a> to make one now!</h6>
+					</div>
+				</form>
+			</div>
+			
+			<div class="signup zoom">
+				<h1 class="light">Sign Up</h1>
+				<form>
+					<input placeholder="Username" name="username" type="text" class="forms" required></input>
+					<input placeholder="Username" name="username" type="email" class="forms" required></input>
+					<input name="password" type="password" class="forms" placeholder="Password" required></input>
+					<input name="password" type="password" class="forms" placeholder="Re-type Password" required></input>
+					<input id="submit" type="submit" class="button"></input>
+					<div class="question">
+						<h6>Already have an account? Click <a id="signUpClick" href="#account">HERE</a> to log in now!</h6>
+					</div>
+				</form>
+			</div>
+		</center>
+		</div>
+		</div>
+		<div id="searchNav" class="sidenav2">
+			<div class="sidenavslide">
+				<h1>Filter your Search</h1>
+				<form>
+					<input type="checkbox" name="conservationP" value="conservation" class="check"> Conservation Projects<br>
+				</form>
+			</div>
+		</div>
+		<div id="searchNavSlider">
+			<a href="#" id="about"><i class="fa fa-angle-double-left"> Filter</i></a>
+		</div>
+	</body>
+</html>
+
+<!--  id="addProject" -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
